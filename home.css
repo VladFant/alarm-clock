@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #222;
+}
+
+#main-screen {
+    display: none;
+  }
+
+
+  .shadow-icon {
+    border-radius: 50%;
+    padding: 4.5%;
+    color: #ff3d12;
+    box-shadow: 0px 5px 10px rgba(135, 135, 135, 0.5);
+  }
+/* INSTALL SCREEN */
+#install-screen img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 45%;
+  }
+  #install-screen p {
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+  }
+  #install-screen div {
+    width: 100%;
+    text-align: center;
+  }
+  #install-screen i {
+    font-size: xx-large;
+    margin: auto;
+  }
+
+  @media all and (display-mode: fullscreen){
+    #install-screen {
+      display: none;
+    }
+    #main-screen {
+      display: block;
+    }
+  }
+  /* COMPUTER PREVIEW */
+  #computer-preview {
+    display: none;
+    margin-top: 5vh;
+    width: 100%;
+    text-align: center;
+  }
+  #computer-preview img {
+    width: 30%
+  }
+  @media (min-width: 992px ) {
+    #computer-preview {
+      display: block;
+    }
+    #install-screen {
+      display: none;
+    }
+  }
